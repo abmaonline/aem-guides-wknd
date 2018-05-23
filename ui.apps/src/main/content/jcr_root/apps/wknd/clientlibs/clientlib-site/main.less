@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar');
 
 /* Import Core Bootstrap */
-@import "/apps/wknd/clientlibs/vendor/bootstrap/src/less/bootstrap.less";
+@import "site/css/bootstrap-core.less";
 
-/* Bootstrap Overrides */
-@import "site/css/variables.less";
+// Imports used also in components (includes only variables for the moment)
+@import "site/css/imports.less";
 
 /* Import Responsive Grid */
 @import "site/css/grid.less";
@@ -20,7 +20,7 @@
 
 /* Import WKND page styles first */
 @import "components/page/page.less";
-    
+
 /* Import WKND Components styles */
 @import "components/breadcrumb/breadcrumb.less";
 @import "components/header/header.less";
